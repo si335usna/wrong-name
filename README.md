@@ -233,31 +233,34 @@ and assignment name `proj2`. Your submission should contain three files:
     *   Gives an analysis of the worst-case running time of your
         algorithm in terms of *n*, *k*, and *m* (see parameters above).
 
-## Languages
+## Grading
 
-Your program must be called `rooms`, and can be written in any
-programming language as long as I can run it.
-Here are the "standard" languages:
+Your grade will be calculated as follows.
 
-Language | Source code filename
--------- | --------------------
-C        | `rooms.c`
-C++      | `rooms.cpp`
-Java     | `Rooms.java` (and your `main` must be in the `Rooms` class)
-Python3  | `rooms.py`
-Rust     | `rooms.rs`
-Haskell  | `rooms.hs`
+*   Correctness: 60%
 
-To use one of these languages, just put *all* of your source code into a
-file with the given name and submit it.  **You must use the names above
-and put all your source code in a single file**.
+    Does your program always return the correct answer on all test
+    cases, within at most 20 seconds runtime? (The test cases for
+    correctness will not go up to the largest possible sizes.)
 
-(Note, for Java, it *is* possible to put multiple `class`es in the same
-`.java` file as long as only the `Rooms` class is `public`. Make sure
-the `Rooms` class has your `main` method.)
+    +   Correctness of `single`: 30%
+    +   Correctness of `most`: 30%
 
-If you want to use a different language than the ones listed, send me an
-email.
++   Efficiency: 30%
+
+    Does your program run quickly on larger inputs (up to the parameters
+    specified above)? To get the highest possible grade, your program
+    should be able to handle the largest possible input in less than 10
+    seconds runtime.
+
+    +   Efficiency of `single`: 10%
+    +   Efficiency of `most`: 20%
+
++   Analysis: 10%
+
+    This is based on your `README` file having a clear, simple
+    description of your your program works and an accurate worst-case
+    runtime analysis.
 
 ## Example test files
 
@@ -272,6 +275,34 @@ lists of baby names](https://www.ssa.gov/oact/babynames/limits.html).
 *   [`small.txt`](small.txt) n=24326, k=3394, m=11
 *   [`med.txt`](med.txt) n=112760, k=27518, m=15
 *   [`large.txt`](large.txt) n=3778860, k=27518, m=15
+
+## Languages
+
+Your two programs must be called `single` and `most`, and can be written
+in any programming language as long as I can run it.
+
+Here are the "standard" languages:
+
+Language | Source code filename
+-------- | --------------------
+C        | `single.c`
+C++      | `single.cpp`
+Java     | `Single.java` (and your `main` must be in the `Single` class)
+Python3  | `single.py`
+Rust     | `single.rs`
+Haskell  | `single.hs`
+
+Use a similar naming scheme for the `most` program.
+
+To use one of these languages, just put *all* of your source code into a
+file with the given name and submit it.  **You must use the names above
+and put all your source code in a single file**.
+
+(Note, for Java, it *is* possible to put multiple `class`es in the same
+`.java` file as long as only the class with the `main` method is `public`.)
+
+If you want to use a different language than the ones listed, send me an
+email.
 
 ## Downloading this repo
 
