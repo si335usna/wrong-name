@@ -110,8 +110,8 @@ times Dana and all similar names to Dana appear:
 Now we add up `(popularity of X) / (poularity of Dana)` for all X in the
 list that are less popular than Dana. The only names similar to Dana and
 less popular than it are "Dan" and "Lana", so this equals
-`3/6 + 1/6`, which would be printed as a rounded
-percentage as `67`.
+`3/4 + 1/4`, which would be printed as a rounded
+percentage as `100`.
 
 If we look instead at `Dane`, it is similar to:
 
@@ -124,7 +124,7 @@ If we look instead at `Dane`, it is similar to:
 
 So the misspellability of Dane would be calculated as
 `(4 + 4 + 4 + 4 + 3) / 6`, which is printed as a rounded percentage as
-`317`.
+`317` (note, this number was **rounded up**).
 
 ## Warm-up: Calculate similarity
 
