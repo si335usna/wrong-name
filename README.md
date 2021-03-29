@@ -177,20 +177,26 @@ misspellable.
 Here are two example runs:
 
     File: med.txt
-    Count: 10
-    Aniya 992
-    Lena 833
-    Mara 800
-    Hana 700
-    Alina 693
-    Alisa 673
-    Kara 662
-    Kali 647
-    Talia 635
-    Javon 632
+    Count: 13
+    Kalia 1567
+    Sana 1500
+    Arin 1467
+    Elia 1433
+    Dayon 1400
+    Amia 1400
+    Aria 1367
+    Rena 1325
+    Eian 1300
+    Dena 1300
+    Daron 1300
+    Danya 1300
+    Aren 1300
 
 Everything after the first two lines is the program's output, which in
 this case contains the top 10 most misspellable names from `med.txt`.
+There are some ties in this example with the same score; you don't need
+to worry about that for your program (any order between the tied names
+will be fine).
 
     File: large.txt
     Count: 5
@@ -207,7 +213,7 @@ parameters:
 
 *   *n* is the number of names in the given list.
     In all tests, it will never exceed **500 million**.
-*   *k* is the number of *unique* names (not counting repeats). 
+*   *k* is the number of *unique* names (not counting repeats).
     In all tests, it will never exceed **100 thousand**.
 *   *m* is the *maximum length* of each name (as a string).
     In all tests, it will never exceed **20**.
